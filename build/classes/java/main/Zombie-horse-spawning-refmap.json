@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "net/flowersauce/zombie_horse_spawning/mixin/LivingEntityDeathMixin": {
+      "Lnet/minecraft/entity/LivingEntity;setPose(Lnet/minecraft/entity/EntityPose;)V": "Lnet/minecraft/class_1309;method_18380(Lnet/minecraft/class_4050;)V",
+      "onDeath": "Lnet/minecraft/class_1309;method_6078(Lnet/minecraft/class_1282;)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "net/flowersauce/zombie_horse_spawning/mixin/LivingEntityDeathMixin": {
+        "Lnet/minecraft/entity/LivingEntity;setPose(Lnet/minecraft/entity/EntityPose;)V": "Lnet/minecraft/class_1309;method_18380(Lnet/minecraft/class_4050;)V",
+        "onDeath": "Lnet/minecraft/class_1309;method_6078(Lnet/minecraft/class_1282;)V"
+      }
+    }
+  }
+}

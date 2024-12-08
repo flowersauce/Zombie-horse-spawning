@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "zombie_horse_spawning",
+  "version": "${version}",
+  "name": "僵尸马生成",
+  "description": "马淹死时一定概率生成僵尸马",
+  "authors": [
+    "Flowersauce"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/zombie_horse_spawning/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.flowersauce.zombie_horse_spawning.client.ZombieHorseSpawningClient"
+    ],
+    "main": [
+      "net.flowersauce.zombie_horse_spawning.ZombieHorseSpawning"
+    ]
+  },
+  "mixins": [
+    "zombie_horse_spawning.mixins.json",
+    {
+      "config": "zombie_horse_spawning.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=${minecraft_version}"
+  }
+}
