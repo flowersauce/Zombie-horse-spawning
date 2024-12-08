@@ -1,13 +1,16 @@
 {
   "schemaVersion": 1,
   "id": "zombie_horse_spawning",
-  "version": "Release-1.0.0",
+  "version": "1.0.0-Release",
   "name": "僵尸马生成",
   "description": "马淹死时一定概率生成僵尸马",
   "authors": [
     "Flowersauce"
   ],
-  "contact": {},
+  "contact": {
+    "homepage": "https://github.com/flowersauce/Zombie-horse-spawning",
+    "sources": "https://github.com/flowersauce/Zombie-horse-spawning"
+  },
   "license": "MIT",
   "icon": "assets/zombie_horse_spawning/icon.png",
   "environment": "*",
