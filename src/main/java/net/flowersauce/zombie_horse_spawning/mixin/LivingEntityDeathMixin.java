@@ -33,7 +33,7 @@ public abstract class LivingEntityDeathMixin
         // 判断是否是马并且是否因溺水死亡
         if ((Object) this instanceof HorseEntity && damageSource.isOf(DamageTypes.DROWN))
         {
-            double spawnChance = 0.95; // 僵尸马的生成概率
+            double spawnChance = 0.15; // 僵尸马的生成概率
             if (new Random().nextDouble() < spawnChance)
             {
                 // 创建僵尸马实体
