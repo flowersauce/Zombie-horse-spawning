@@ -5,6 +5,7 @@
 - **当前版本**: 支持 Minecraft 1.21+
 - **作者**: [Flowersauce](https://github.com/flowersauce)
 - **项目地址**: [Zombie horse spawning 项目](https://github.com/flowersauce/Zombie-horse-spawning)
+- **提交问题**: [Issues](https://github.com/flowersauce/Zombie-horse-spawning/issues)
 
 ---
 
