@@ -33,16 +33,18 @@ public abstract class LivingEntityDeathMixin
         // 判断是否是马并且是否因溺水死亡
         if ((Object) this instanceof HorseEntity && damageSource.isOf(DamageTypes.DROWN))
         {
-            double spawnChance = 0.15; // 僵尸马的生成概率
+            double spawnChance = 0.95; // 僵尸马的生成概率
             if (new Random().nextDouble() < spawnChance)
             {
                 // 创建僵尸马实体
                 HorseEntity horse = (HorseEntity) (Object) this;
                 ZombieHorseEntity zombieHorse = new ZombieHorseEntity(EntityType.ZOMBIE_HORSE, horse.getWorld());
+                // 继承原马的位置、大小、驯服状态、驯服者ID、自定义名称
                 zombieHorse.setPosition(horse.getX(), horse.getY(), horse.getZ());
                 zombieHorse.setBaby(horse.isBaby());
                 zombieHorse.setTame(horse.isTame());
                 zombieHorse.setOwnerUuid(horse.getOwnerUuid());
+                zombieHorse.setCustomName(horse.getCustomName());
 
                 // 调整驯服的僵尸马的属性
                 if (zombieHorse.isTame())
@@ -65,8 +67,8 @@ public abstract class LivingEntityDeathMixin
                         horse.getBlockPos(), // 播放音效的位置（马的死亡位置）
                         SoundEvents.ENTITY_ZOMBIE_HORSE_AMBIENT, // 音效
                         SoundCategory.NEUTRAL, // 音效类别
-                        1.2f, // 音量
-                        0.5f  // 音调
+                        2f, // 音量
+                        0.6f  // 音调
                 );
             }
         }
